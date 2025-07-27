@@ -1,17 +1,20 @@
-def part_one(filename):
+def part_1(filename):
     with open(filename, encoding="utf-8") as f:
         lines = f.read().strip().split("\n")
+        for line in lines:
+            print(line)
 
-
-def part_two(filename: str) -> int:
-    with open(filename, encoding="utf-8") as f:
+def part_2(filename):
+     with open(filename, encoding="utf-8") as f:
         lines = f.read().strip().split("\n")
-
+        for line in lines:
+            print(line)
 
 if __name__ == "__main__":
-    input_path = "./day00/input.txt"
+    input_path_1 = "input1.txt"
+    input_path_2 = "input1.txt"
     print("---Part One---")
-    print(part_one(input_path))
+    print(part_1(input_path_1))
 
     print("---Part Two---")
-    print(part_two(input_path))
+    print(part_2(input_path_2))
